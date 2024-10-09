@@ -8,8 +8,6 @@
 }
 
 body {
-  /*background-image: url(https://img.freepik.com/vector-premium/marco-azul-hecho-huellas-patas-mascota-corazones-ilustracion-vectorial_104589-841.jpg);
-  background-size: cover;*/
   background-image: linear-gradient(to right, rgb(7, 7, 99), rgb(255, 148, 8));
 }
 
@@ -176,14 +174,13 @@ h2 {
   font-size: 19px;
   border-radius: 10px;
 }
+.producto.producto:hover {
+  transform: scale(1.1);
+}
 
 .producto img {
   width: 190px;
   height: 210px;
-}
-
-.producto:hover {
-  transform: scale(1.1);
 }
 
 /*FOOTER*/
