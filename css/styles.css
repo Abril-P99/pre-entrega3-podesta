@@ -173,6 +173,7 @@ h2 {
   font-size: 19px;
   border-radius: 10px;
   transition: 0.5s;
+  box-shadow: 0 0 6px 0 rgba(255, 255, 255, 0.8);
 }
 .producto.producto:hover {
   transform: scale(1.1);
@@ -353,6 +354,7 @@ h2 {
   padding-left: 15%;
   border-radius: 10px;
   transition: 0.5s;
+  box-shadow: 0 0 6px 0 rgba(255, 255, 255, 0.8);
 }
 
 .productos p {
@@ -377,6 +379,129 @@ h2 {
   color: black;
 }
 
+/*CONTACTO*/
+.form-container {
+  width: 100%;
+  height: 650px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+h5 {
+  margin: 10px 0;
+  font-weight: 800;
+  text-align: center;
+}
+
+.form {
+  background-image: linear-gradient(rgb(238, 199, 240), rgb(153, 248, 153));
+  width: 30%;
+  padding: 10px 0;
+  border-radius: 10px;
+  box-shadow: 0 0 6px 0 rgba(255, 255, 255, 0.8);
+  margin: auto;
+}
+
+form {
+  width: 100%;
+  margin: auto;
+}
+
+form .grupo {
+  position: relative;
+  margin: 45px;
+}
+
+input, textarea {
+  background: none;
+  color: #c6c6c6;
+  font-size: 18px;
+  padding: 10px 10px 10px 5px;
+  display: block;
+  width: 100%;
+  border: none;
+  border-bottom: 1px solid rgba(73, 56, 56, 0.3490196078);
+  resize: none;
+}
+
+input:focus, textarea:focus {
+  outline: none;
+  color: rgb(94, 93, 93);
+}
+
+input:focus ~ label,
+textarea:focus ~ label {
+  position: absolute;
+  top: -14px;
+  font-size: 18px;
+  color: #2d3f4e;
+}
+
+label {
+  color: #2d3f4e;
+  font: 16px;
+  position: absolute;
+  left: 5px;
+  top: 10px;
+  transition: 0.3s ease all;
+}
+
+.barra {
+  position: relative;
+  display: block;
+  width: 100%;
+}
+
+.barra::before {
+  content: "";
+  height: 3px;
+  width: 0;
+  bottom: 0;
+  position: absolute;
+  background-image: linear-gradient(to right, rgb(247, 2, 255), rgb(0, 255, 0));
+  transition: 0.3s ease all;
+  left: 0;
+}
+
+input:focus ~ .barra::before, textarea:focus ~ textarea::before {
+  width: 100%;
+}
+
+.bt-form {
+  background: #fc5c7d;
+  background: linear-gradient(to right, #6a82fb, #fc5c7d);
+  display: block;
+  width: 150px;
+  height: 40px;
+  border: none;
+  color: white;
+  border-radius: 4px;
+  font-size: 16px;
+  margin: 10px auto;
+  cursor: pointer;
+}
+
+@media screen and (max-width: 1000px) {
+  .form {
+    width: 50%;
+  }
+}
+@media screen and (max-width: 600px) {
+  .form {
+    width: 60%;
+  }
+}
+@media screen and (max-width: 450px) {
+  .form {
+    width: 80%;
+  }
+}
+@media screen and (max-width: 300px) {
+  .form {
+    width: 90%;
+  }
+}
 /* RESPONSIVE  */
 @media (max-width: 900px) {
   /* NAVBAR*/
