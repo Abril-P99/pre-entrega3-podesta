@@ -113,20 +113,17 @@ nav li {
   --hover: #66f3ad;
 }
 
-.nav ul li a {
-  padding-top: 2%;
-}
-
 button {
   color: var(--color);
   transition: 0.25s;
-  font-size: 20px;
+  font-size: 18px;
   align-items: center;
 }
 
 button:focus, button:hover {
   border-color: var(--hover);
   color: #000007;
+  margin-top: 2%;
 }
 
 .radius {
@@ -135,6 +132,10 @@ button:focus, button:hover {
   line-height: 1;
   padding: 1em 2em;
   border-radius: 20px;
+}
+
+.nav a {
+  margin-top: 2%;
 }
 
 /*DESCUENTO*/
