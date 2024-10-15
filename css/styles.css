@@ -113,6 +113,10 @@ nav li {
   --hover: #66f3ad;
 }
 
+.nav ul li a {
+  padding-top: 2%;
+}
+
 button {
   color: var(--color);
   transition: 0.25s;
@@ -127,9 +131,8 @@ button:focus, button:hover {
 
 .radius {
   background: 0 0;
-  font: inherit;
+  font-size: inherit;
   line-height: 1;
-  margin: 0.5em;
   padding: 1em 2em;
   border-radius: 20px;
 }
