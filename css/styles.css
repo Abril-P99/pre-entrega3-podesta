@@ -8,12 +8,11 @@
 
 body {
   background-image: linear-gradient(to right, rgb(7, 7, 99), rgb(255, 148, 8));
-  box-sizing: content-box;
 }
 
 /*CARRUSEL*/
 .carousel {
-  width: 100%;
+  max-width: 100%;
   height: 100%;
   overflow: hidden;
   padding: 0% 2%;
@@ -66,13 +65,13 @@ body {
 }
 /*TITULO*/
 .titulo {
-  font-size: 65px;
+  font-size: 45px;
   color: #66f3ad;
   text-align: center;
   float: left;
-  padding-left: 5%;
   text-shadow: 1px 2px 2px black, 0 0 25px rgb(35, 209, 142), 0 0 5px rgb(30, 43, 219);
   animation-duration: 2s;
+  padding: 2% 2%;
 }
 
 /*BARRA DE NAVEGACION*/
@@ -82,7 +81,7 @@ body {
 
 .navbar-grande {
   background-color: rgba(0, 0, 0, 0.5);
-  width: 100%;
+  max-width: 100%;
   display: flex;
   flex-direction: row;
   justify-content: space-around;
@@ -110,7 +109,6 @@ nav li {
 }
 
 .fill {
-  font-size: 17px;
   --color:#ffffff;
   --hover: #66f3ad;
 }
@@ -118,6 +116,8 @@ nav li {
 button {
   color: var(--color);
   transition: 0.25s;
+  font-size: 20px;
+  align-items: center;
 }
 
 button:focus, button:hover {
@@ -337,7 +337,6 @@ h2 {
 /*PRODUCTOS*/
 #product-container {
   width: 100%;
-  height: 90%;
   display: flex;
   flex-direction: row;
   justify-content: space-around;
@@ -511,7 +510,7 @@ input:focus ~ .barra::before, textarea:focus ~ textarea::before {
   }
 }
 /* RESPONSIVE  */
-@media (max-width: 900px) {
+@media (max-width: 1080px) {
   /* NAVBAR*/
   #navbar {
     display: flex;
@@ -557,9 +556,7 @@ input:focus ~ .barra::before, textarea:focus ~ textarea::before {
   }
   .carousel img {
     width: 100%;
-    height: 640px;
     align-items: center;
-    margin-left: 3%;
   }
   @keyframes slide {
     0% {
