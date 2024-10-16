@@ -14,6 +14,7 @@
     @if $este-curso-es-increible == True{ 
         body { 
             background-image: linear-gradient(to right, rgb(7, 7, 99), rgb(255, 148, 8));
+           
             
          }
         }     
@@ -90,7 +91,8 @@
     float: left;
     text-shadow: 1px 2px 2px black, 0 0 25px rgb(35, 209, 142), 0 0 5px rgb(30, 43, 219);
     animation-duration: 2s;
-    padding-top: 1%;
+    margin: 5%;
+    
   }
 }
 
@@ -114,6 +116,10 @@
   }
 }
 
+h1{
+  
+}
+
 
 
   
@@ -130,7 +136,7 @@
   display: flex;
   flex-direction: row;
   justify-content: space-between;
-  padding: 0 7%;
+  padding: 2% 7%;
 
 }
   nav{
@@ -208,8 +214,15 @@
     display: flex;
     justify-content: center;
     align-items: center;
-
+    
   }
+
+ 
+    
+
+  
+
+  transform: scale(1.1);
   
   .descuento {
     display: flex;
@@ -501,10 +514,17 @@
   form{
     width: 100%;
     margin: auto;
+    animation-duration: 1s;
+    animation-delay: 1s;
+
+    .grupo{
+      position: relative;
+      margin: 45px;
+    }
   
   }
 
-  form .grupo{
+  .grupo{
     position: relative;
     margin: 45px;
   }
