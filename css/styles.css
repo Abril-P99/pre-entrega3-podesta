@@ -196,16 +196,16 @@ h2 {
 
 /*FOOTER*/
 .footer {
-  background-color: rgba(0, 0, 0, 0.8);
+  background-color: rgba(0, 0, 0, 0.5);
   color: #ffffff;
   margin-top: 5%;
-  padding: 2%;
+  padding: 0.5%;
   font-family: "Baskervville SC", serif;
   font-size: 20px;
   display: flex;
   flex-direction: row;
   justify-content: space-around;
-  text-shadow: 1px 2px 2px black, 0 0 25px rgb(35, 209, 142), 0 0 5px rgb(30, 43, 219);
+  box-shadow: 1px 2px 2px black, 0 0 25px rgb(35, 209, 142), 0 0 5px rgb(30, 43, 219);
 }
 
 .footer p {
@@ -222,8 +222,8 @@ h2 {
 }
 
 .mapa iframe {
-  width: 300px;
-  height: 200px;
+  width: 600px;
+  height: 280px;
 }
 
 .redes {
@@ -247,7 +247,7 @@ h2 {
 }
 
 #veterinarias section {
-  width: 700px;
+  width: 1200px;
   height: 550px;
   color: #ffffff;
   background-color: rgba(0, 0, 0, 0.5);
@@ -256,14 +256,21 @@ h2 {
   border-radius: 10px;
 }
 
+.veterinarias {
+  display: flex;
+  flex-direction: row;
+}
+
 #veterinarias p {
-  margin-top: 5%;
-  font-size: 20px;
+  margin-left: 5%;
+  margin-right: 5%;
+  font-size: 30px;
 }
 
 #veterinarias section img {
   width: 600px;
   height: 400px;
+  margin-left: 2%;
   border-radius: 10px;
 }
 
@@ -636,12 +643,12 @@ input:focus ~ .barra::before, textarea:focus ~ textarea::before {
   }
   /*VETERINARIA*/
   .vet-titulo {
-    margin-top: 25%;
+    margin-top: 10%;
     padding-top: 20px;
   }
   #veterinarias section img {
     width: 100%;
-    height: 200px;
+    height: 250px;
     margin: 0;
   }
   #veterinarias section {
@@ -649,9 +656,13 @@ input:focus ~ .barra::before, textarea:focus ~ textarea::before {
     height: 450px;
     padding-bottom: 50%;
   }
+  .veterinarias {
+    display: flex;
+    flex-direction: column;
+  }
   #veterinarias p {
     margin-top: 2%;
-    font-size: 20px;
+    font-size: 12px;
   }
   /*ABOUT US*/
   #grid-nosotros {
@@ -660,7 +671,7 @@ input:focus ~ .barra::before, textarea:focus ~ textarea::before {
     width: 100%;
   }
   #grid-nosotros p {
-    padding-left: 5%;
+    padding-left: 3%;
     font-size: 20px;
     text-align: center;
   }
@@ -671,13 +682,13 @@ input:focus ~ .barra::before, textarea:focus ~ textarea::before {
   }
   #grid-nosotros .picture img {
     margin: 2%;
-    width: 300px;
-    height: 180px;
+    width: 100%;
+    height: 280px;
     align-items: center;
   }
   /*REFUGIOS*/
   #carouselExampleSlidesOnly {
-    height: 350px;
+    height: 480px;
     width: 100%;
     margin-right: 5%;
   }
@@ -692,24 +703,28 @@ input:focus ~ .barra::before, textarea:focus ~ textarea::before {
   }
   /*PRODUCTOS*/
   #product-container {
+    padding-top: 20%;
+  }
+  .sectores {
     display: flex;
     flex-direction: column;
-    justify-content: space-around;
-    align-items: center;
-    margin-top: 10%;
+    width: 80%;
   }
-  #product-container .productos {
-    justify-content: center;
-    padding-top: 20%;
+  .productos {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
     margin-left: 15%;
     width: 100%;
   }
   #product-container .productos p {
-    margin: 5% 2%;
+    font-size: 18px;
   }
-  #product-container .productos img {
-    width: 250px;
-    height: 150px;
+  .productos img {
+    width: 90%;
+    height: 180px;
+    padding: 1%;
   }
 }
 
