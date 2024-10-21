@@ -3,6 +3,10 @@
   flex-direction: column;
 }
 
+.animate__animated {
+  animation-timeline: 3s 3s 3s;
+}
+
 .sectores {
   display: flex;
   flex-direction: row;
