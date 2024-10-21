@@ -1,0 +1,21 @@
+.faster .carousel-inner {
+    transition: 10s;
+  }
+  
+  .flex-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    margin-top: 5%;
+    margin-bottom: 8%;
+  }
+  
+  .flex-container .btn {
+    background-color: #4646df;
+    color: #ffffff;
+  }
+  
+  .flex-container .btn:hover {
+    background-color: #66f3ad;
+    color: #040453;
+  }

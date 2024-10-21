@@ -1,4 +1,11 @@
 @import "../scss/variables.scss" ;
+@import "../scss/veterinarias.scss";
+@import "../scss/productos.scss";
+@import "../scss/aboutus.scss";
+@import "../scss/refugios.scss";
+@import "../scss/contacto.scss";
+
+
 
 
 * {
@@ -14,6 +21,7 @@
     @if $este-curso-es-increible == True{ 
         body { 
             background-image: linear-gradient(to right, rgb(7, 7, 99), rgb(255, 148, 8));
+            width: 100%;
            
             
          }
@@ -21,14 +29,18 @@
     @else{
         body{
             background-color: #040453;
-            box-sizing: content-box;
+            
 
         }
-    }     
+    }   
+    
+    header{
+      width: 100%;
+    }
   
   /*CARRUSEL*/
   .carousel {
-    max-width: 100%;
+    width: 100%;
     height: 100%;
     overflow: hidden;
     padding: 0% 2%;
@@ -91,7 +103,7 @@
     float: left;
     text-shadow: 1px 2px 2px black, 0 0 25px rgb(35, 209, 142), 0 0 5px rgb(30, 43, 219);
     animation-duration: 2s;
-    margin: 5%;
+   
     
   }
 }
@@ -116,14 +128,8 @@
   }
 }
 
-h1{
   
-}
-
-
-
-  
-  /*BARRA DE NAVEGACION*/
+/*BARRA DE NAVEGACION*/
 #navbar{
     display: none;
 
@@ -132,7 +138,8 @@ h1{
 
 .navbar-grande{
   background-color: rgba(0, 0, 0, 0.5);
-  max-width: 100%;
+  width: 100%;
+  height: 110px;
   display: flex;
   flex-direction: row;
   justify-content: space-between;
@@ -148,7 +155,7 @@ h1{
 
     li {
       text-align: center;
-      padding: 2% 2%;
+      padding: 0% 2%;
       font-family: "Baskervville SC", serif;
       font-weight: 400;
       font-style: normal;
@@ -162,19 +169,21 @@ h1{
   /*BOTONES*/
   .fill:focus, .fill:hover {
     box-shadow: inset 0 0 0 2em var(--hover);
+     
+    
   }
   
   .fill {
-   
     --color:#ffffff;
     --hover: #66f3ad;
+  
     
   }
 
 
   button {
     color: var(--color);
-    transition: 0.25s;
+    transition: 0.75s;
     font-size: 18px;
     align-items: center;
     
@@ -185,6 +194,8 @@ h1{
     border-color: var(--hover);
     color: #000007;
     margin-top: 2%;
+    
+    
    
   }
   
@@ -216,18 +227,8 @@ h1{
     align-items: center;
     
   }
-
- 
-    
-
-  
-
-  transform: scale(1.1);
   
   .descuento {
-    display: flex;
-    justify-content: center;
-    flex-direction: column;
     background: transparent;
     padding: 0 2%;
   }
@@ -243,8 +244,8 @@ h1{
   }
   
   .producto {
-    width: 280px;
-    height: 400px;
+    width: 250px;
+    height: 370px;
     background-color: #ffffff;
     text-align: center;
     padding-left: 1%;
@@ -256,15 +257,19 @@ h1{
     transition: 0.5s;
     box-shadow: 0 0 6px 0 rgba(255, 255, 255, 0.8);
 
-    &.producto:hover {
+    &:hover {
         transform: scale(1.1);
-        background-image: linear-gradient(rgb(243, 127, 247), rgb(101, 247, 101));
+        background-image: linear-gradient(rgb(226, 109, 255), rgb(101, 247, 101));
       }
   }
   
   .producto img {
     width: 190px;
     height: 210px;
+  }
+
+  .producto p{
+    margin-bottom: 5%;
   }
   
  
@@ -306,331 +311,8 @@ h1{
     flex-direction: column;
     justify-content: space-evenly;
   }
-  
-  /*VETERINARIAS*/
-
-  @if $este-curso-es-increible == False{ 
-    #veterinarias {
-  background-color: #000007;
-  color: red;
-  font-size: 200px;
-    
-  }
- }
-
-  @else if $este-curso-es-increible == True{
-    #veterinarias{
-    width: 100%;
-    height: 90%;
-    background-color: transparent;
-    padding-top: 5%;
-    padding-bottom: 5%;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
-}
-  }
-  @else{
-    #veterinarias{
-        background-color: #040453;
-        color: #66f3ad;
-        font-size: 400px;
-}
-  }
-  
-
- 
-   
-  
-  #veterinarias section {
-    width: 1200px;
-    height: 550px;
-    color: #ffffff;
-    background-color: rgba(0, 0, 0, 0.5);
-    margin: 2%;
-    padding-bottom: 20%;
-    border-radius: 10px;
-  }
-  
-  .veterinarias{
-    display: flex;
-    flex-direction: row;
-  }
-  #veterinarias p {
-    margin-left: 5%;
-    margin-right: 5%;
-    font-size: 30px;
-  }
-  
-  #veterinarias section img {
-    width: 600px;
-    height: 400px;
-    margin-left: 2%;
-    border-radius: 10px;
-  }
-  
 
   
-  #veterinarias h4 {
-    text-align: center;
-    color: rgb(223, 248, 80);
-    font-family: "Baskervville SC", serif;
-    font-size: 30px;
-    padding-bottom: 2%;
-    padding-top: 2%;
-  }
-  
-  /*SOBRE NOSOTROS*/
-  #grid-nosotros {
-    display: grid;
-    height: 90%;
-    grid-template-rows: 350px 350px;
-    grid-template-columns: 50% 50%;
-    grid-template-areas: "a1 a2" "a1 a3" "a1 a4";
-    background-color: transparent;
-    padding: 8% 0%;
-  }
-  
-  #grid-nosotros img {
-    width: 490px;
-    height: 300px;
-    margin-bottom: 8%;
-  }
-  
-  #grid-nosotros p {
-    color: #ffffff;
-    font-size: 35px;
-  }
-  
-  .img-uno {
-    grid-area: a2;
-    margin-left: 15%;
-  }
-  
-  .img-dos {
-    grid-area: a3;
-  }
-  
-  .img-tres {
-    grid-area: a4;
-    margin-left: 15%;
-  }
-  
-  .parrafo {
-    grid-area: a1;
-  }
-  
-  /*REFUGIOS*/
-  .faster .carousel-inner {
-    transition: 10s;
-  }
-  
-  .flex-container {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-around;
-    margin-top: 5%;
-    margin-bottom: 8%;
-  }
-  
-  .flex-container .btn {
-    background-color: #f5f5fd;
-    color: #ffffff;
-  }
-  
-  .flex-container .btn:hover {
-    background-color: #66f3ad;
-    color: #040453;
-  }
-  
-  /*PRODUCTOS*/
-  #product-container {
-    display: flex;
-    flex-direction: column;
-
-  }
-
-  .sectores{
-    display: flex;
-    flex-direction: row;
-    justify-content: space-around;
-  }
-
-  .productos{
-    background-color: rgba(255, 255, 255, 0.5);
-    box-shadow: 0 0 6px 0 rgba(163, 158, 158, 0.8);
-    width: 25%;
-    height: 300px;
-    margin: 2%;
-    border-radius: 10px;
-    text-align: center;
-  }
-
-  .productos img{
-    width: 90%;
-    height: 60%;
-    margin: 2%;
-    border-radius: 10px;
-  }
-
-  .productos:hover{
-    transform: scale(1.1);
-    background-image: linear-gradient( rgb(243, 127, 247), rgb(101, 247, 101));
-    color: black;
-  }
-
-  /*CONTACTO*/
-
-  .form-container{
-    width: 100%;
-    height: 650px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-  }
-
-  h5{
-    
-    margin: 10px 0;
-    font-weight: 800;
-    text-align: center;
-    
-
-  }
-
-
-  .form{
-    background-image: linear-gradient( rgb(238, 199, 240), rgb(153, 248, 153));
-    width: 30%;
-    padding: 10px 0;
-    border-radius: 10px;
-    box-shadow: 0 0 6px 0 rgba(255, 255, 255, 0.8);
-    margin: auto;
-   
-  }
-
-  form{
-    width: 100%;
-    margin: auto;
-    animation-duration: 1s;
-    animation-delay: 1s;
-
-    .grupo{
-      position: relative;
-      margin: 45px;
-    }
-  
-  }
-
-  .grupo{
-    position: relative;
-    margin: 45px;
-  }
-
-  input, textarea{
-    background: none;
-    color: #c6c6c6;
-    font-size: 18px;
-    padding: 10px 10px 10px 5px;
-    display: block;
-    width: 100%;
-    border: none;
-    border-bottom: 1px solid #49383859; 
-    resize: none;
-  }
-
-  input:focus, textarea:focus{
-    outline: none;
-    color: rgb(94, 93, 93);
-  }
-
-  input:focus~label, 
-  textarea:focus~label{
-  
-    position: absolute;
-    top: -14px;
-    font-size: 18px;
-    color: #2d3f4e;
-
-  }
-
-  label{
-    color:#2d3f4e;
-    font: 16px;
-    position: absolute;
-    left: 5px;
-    top: 10px;
-    transition: 0.3s ease all;
-
-  }
-
-  .barra{
-    position: relative;
-    display: block;
-    width: 100%;
-  }
-
-  .barra::before{
-    content: "";
-    height: 3px;
-    width: 0;
-    bottom: 0;
-    position: absolute;
-    background-image: linear-gradient( to right, rgb(247, 2, 255), rgb(0, 255, 0));
-    transition: 0.3s ease all;
-    left: 0;
-  }
-
-  input:focus~.barra::before, textarea:focus~textarea::before{
-    width: 100%;
-
-  }
-
-  .bt-form{
-    background: #fc5c7d;
-    background: linear-gradient(to right, #3c55d1, #fc5c7d );
-    display: block;
-    width: 200px;
-    height: 50px;
-    border: none;
-    color: white;
-    border-radius: 4px;
-    font-size: 20px;
-    margin: 20px auto 10px auto;
-    cursor: pointer;
-    a{
-      text-decoration: none;
-    }
- }
-@media screen and (max-width:1000px) {
-  .form{
-    width: 50%;
-  }
-}
-
-@media screen and (max-width:600px) {
-  .form{
-    width: 60%;
-  }
-}
-
-@media screen and (max-width:450px) {
-  .form{
-    width: 80%;
-  }
-}
-
-@media screen and (max-width:300px) {
-  .form{
-    width: 90%;
-  }
-}
-
-
-
-
   /* RESPONSIVE  */
 
   
@@ -660,7 +342,7 @@ h1{
         background-color: rgba(169, 233, 206, 0.9);
     }
 
-    .nav-item :hover{
+    .nav-item:hover{
         border-radius: 20px;
         background-color: rgba(102, 243, 173, 0.7);
         transition: 1s;
@@ -732,31 +414,50 @@ h2{
     justify-content: center;
     flex-direction: column;
     background-color: rgba(218, 252, 236, 0.8);
-    padding: 0% 2%;
+    padding: 0%;
     
   }
   
-  .lista {
+  .descuento .lista {
+    width: 100%;
     padding-top: 5%;
     padding-bottom: 5%;
     display: flex;
     flex-direction: column;
+    flex-wrap: wrap;
     justify-content: space-between;
     align-items: center;
-    }
-    .producto{
-        margin-bottom: 5%;
-        width: 500px;
-        height: 500px;
-    }
+    
+  }
 
-    .producto img{
-        width: 350px;
-        height: 340px;
+  .producto {
+    margin-bottom: 5%;
+    margin-left: 2%; 
+    width: 90%;
+    height: 400px;
+    font-size: 12px;
+
+    img {
+      width: 80%;
+      height: 300px;
     }
-    .producto p{
-        font-size: 120%;
+    p{
+      font-size: 20px;
     }
+    &:hover {
+      transform: none;
+      background-image: linear-gradient(rgb(226, 109, 255), rgb(101, 247, 101));
+    }
+    &:active{
+      background-image: linear-gradient(rgba(255, 136, 0, 0.5), rgba(109, 102, 94, 0.5));
+      
+    }
+}
+
+
+
+
+
 
 
     /* FOOTER*/
@@ -768,7 +469,7 @@ h2{
     }
 
     .footer p {
-        font-size: 20px0px;
+        font-size: 20px;
         text-align: center;
       }
       
@@ -785,7 +486,7 @@ h2{
       
       .mapa iframe {
         width: 100%;
-        height: 200px;
+        height: 300px;
       }
       
       .redes {
@@ -884,6 +585,11 @@ h2{
       align-items: center;
       margin-left: 15%;
       width: 100%;
+      height: 370px;
+
+      &:active{
+        background-image: linear-gradient(rgba(255, 165, 0, 0.5), rgba(122, 106, 106, 0.5) );
+      }
     }
     #product-container .productos p {
      
@@ -892,8 +598,13 @@ h2{
 
     .productos img{
         width: 90%;
-        height: 180px;
+        height: 280px;
         padding: 1%;
 
     }
+
+    
 }
+
+
+

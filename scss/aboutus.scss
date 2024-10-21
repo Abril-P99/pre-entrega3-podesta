@@ -1,0 +1,39 @@
+#grid-nosotros {
+    display: grid;
+    height: 90%;
+    grid-template-rows: 350px 350px;
+    grid-template-columns: 50% 50%;
+    grid-template-areas: "a1 a2" "a1 a3" "a1 a4";
+    background-color: transparent;
+    padding: 8% 0%;
+  }
+  
+  #grid-nosotros img {
+    width: 490px;
+    height: 300px;
+    margin-bottom: 8%;
+  }
+  
+  #grid-nosotros p {
+    color: #ffffff;
+    font-size: 35px;
+  }
+  
+  .img-uno {
+    grid-area: a2;
+    margin-left: 15%;
+  }
+  
+  .img-dos {
+    grid-area: a3;
+  }
+  
+  .img-tres {
+    grid-area: a4;
+    margin-left: 15%;
+  }
+  
+  .parrafo {
+    grid-area: a1;
+  }
+  
