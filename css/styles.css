@@ -688,9 +688,10 @@ h2 {
     padding-top: 20px;
   }
   #veterinarias section img {
-    width: 100%;
+    width: 90%;
     height: 250px;
     margin: 0;
+    margin-left: 5%;
   }
   #veterinarias section {
     width: 100%;
