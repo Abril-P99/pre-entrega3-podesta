@@ -115,10 +115,16 @@
     font-size: 30px;
     margin: 20px auto 10px auto;
     cursor: pointer;
+    text-decoration: none;
     box-shadow: 1px 2px 2px black, 0 0 25px rgb(253, 253, 253), 0 0 5px rgb(30, 43, 219);
     
     a{
       text-decoration: none;
+    }
+
+    &:hover{
+      transform: scale(1.1);
+      color: #fc5c7d;
     }
  }
 @media screen and (max-width:1000px) {
