@@ -17,6 +17,8 @@
    
     
   }
+
+ 
   
     @if $este-curso-es-increible == True{ 
         body { 
@@ -241,6 +243,11 @@
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
+
+    a{
+      text-decoration: none;
+      color: #000007;
+    }
    
   }
   
@@ -434,7 +441,7 @@ h2{
   .producto {
     margin-bottom: 5%;
     margin-left: 2%; 
-    width: 90%;
+    width: 100%;
     height: 400px;
     font-size: 12px;
 

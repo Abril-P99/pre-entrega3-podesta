@@ -450,6 +450,10 @@ h2 {
   justify-content: space-between;
   align-items: center;
 }
+.lista a {
+  text-decoration: none;
+  color: #000007;
+}
 
 .producto {
   width: 250px;
@@ -616,7 +620,7 @@ h2 {
   .producto {
     margin-bottom: 5%;
     margin-left: 2%;
-    width: 90%;
+    width: 100%;
     height: 400px;
     font-size: 12px;
   }
