@@ -20,7 +20,7 @@
   
     @if $este-curso-es-increible == True{ 
         body { 
-            background-image: linear-gradient(to right, rgb(7, 7, 99), rgb(255, 148, 8));
+            background-image: linear-gradient(to right, rgb(11, 11, 160), rgb(255, 148, 8));
             width: 100%;
            
             
@@ -144,6 +144,7 @@
   flex-direction: row;
   justify-content: space-between;
   padding: 2% 7%;
+  
 
 }
   nav{
