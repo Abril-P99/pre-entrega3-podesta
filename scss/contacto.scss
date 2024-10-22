@@ -1,3 +1,4 @@
+
 .form-container{
     width: 100%;
     height: 650px;
@@ -105,7 +106,7 @@
 
   .bt-form{
     background: #fc5c7d;
-    background: linear-gradient(to right, #f290ff, #2dff03 );
+    background: linear-gradient(to right, #bb57c9, #ffa703 );
     display: block;
     width: 200px;
     height: 60px;
@@ -115,18 +116,17 @@
     font-size: 30px;
     margin: 20px auto 10px auto;
     cursor: pointer;
-    text-decoration: none;
     box-shadow: 1px 2px 2px black, 0 0 25px rgb(253, 253, 253), 0 0 5px rgb(30, 43, 219);
     
-    a{
-      text-decoration: none;
-    }
+   
 
     &:hover{
       transform: scale(1.1);
-      color: #fc5c7d;
+      color: #ffffff;
     }
  }
+
+
 @media screen and (max-width:1000px) {
   .form{
     width: 50%;
@@ -150,3 +150,5 @@
     width: 90%;
   }
 }
+
+
