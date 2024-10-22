@@ -619,7 +619,6 @@ h2 {
     display: flex;
     justify-content: center;
     flex-direction: column;
-    background-color: rgba(218, 252, 236, 0.8);
     padding: 0%;
   }
   .descuento .lista {
