@@ -146,6 +146,7 @@
   flex-direction: row;
   justify-content: space-between;
   padding: 2% 7%;
+ 
   
 
 }
@@ -537,6 +538,9 @@ h2{
         display: flex;
         flex-direction: column;
         width: 100%;
+        h2{
+          margin-top: 15%;
+        }
     }
     #grid-nosotros p {
       padding-left: 3%;

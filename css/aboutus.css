@@ -7,6 +7,10 @@
   background-color: transparent;
   padding: 8% 0%;
 }
+#grid-nosotros h3 {
+  color: #ffffff;
+  text-align: center;
+}
 
 #grid-nosotros img {
   width: 490px;
